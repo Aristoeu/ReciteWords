@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:id="@+id/relative1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:src="@drawable/rev_top"
+        android:id="@+id/rev_top"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="criminal"
+        android:layout_alignBottom="@id/rev_top"
+        android:layout_marginBottom="35dp"
+        android:textSize="35dp"
+        android:id="@+id/word"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/word"
+        android:text="音标"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="45dp"
+        android:id="@+id/pronunciation"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/sound_off_night"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/pronounce"/>
+</RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/rev_bot"
+                android:id="@+id/rev_bot"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/translation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/rev_bot"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="释义" />
+
+
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorBack"
+        android:id="@+id/bar1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="例句"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/succession"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/sentences"
+        android:text="例句在这里"
+        android:scrollbars="vertical"
+        android:layout_margin="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorBack"
+            android:id="@+id/bar2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="助记"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/succession"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/helpMemory"
+            android:text="助记在这里"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBack"
+            android:text="请把英文发音和中文解释说出口\n点击屏幕显示答案"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/Float"
+            />
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="认识"
+            android:id="@+id/btn_know"
+            android:textColor="@color/colorBack"
+            android:textSize="20dp"
+            android:background="@color/colorKnow"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="模糊"
+            android:id="@+id/btn_half_know"
+            android:textColor="@color/colorBack"
+            android:textSize="20dp"
+            android:background="@color/colorHalfKnow"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_not_know"
+            android:text="忘记"
+            android:textColor="@color/colorBack"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/colorNotKnow"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
